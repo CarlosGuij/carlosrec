@@ -6,10 +6,10 @@ while read -r linea; do
 
 nota=$(echo "$linea" | awk '{print $3}')
 
-if [ $nota -ge 5 ]; 
+if [ $nota -ge  5 ] ;
 then
-echo "El alumno $nombre esta aprobado"
+echo "El alumno SI ha aprobado todo"
 else
-echo "El alumno $nombre no esta aprobado"
+echo "El alumno NO ha aprobado todo"
 fi
 done < "notas.txt"
